@@ -69,5 +69,6 @@ ENV XUI_ENABLE_FAIL2BAN="true"
 ENV XUI_DB_TYPE=""
 ENV XUI_DB_DSN=""
 EXPOSE 2053
-CMD [ "./x-ui" ]
-ENTRYPOINT [ "/app/DockerEntrypoint.sh" ]
+
+ENTRYPOINT ["/app/DockerEntrypoint.sh"]
+CMD ["./x-ui"]
